@@ -15,5 +15,6 @@ class Solution:
                 to_add = value_dict[s[i]]
             
             sum += to_add
-            i += 1 
+            i += 1
+            
         return sum
