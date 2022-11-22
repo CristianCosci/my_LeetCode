@@ -14,6 +14,6 @@ class Solution:
                 if prime[i] == True:  
                     for j in range(i*i, n, i):
                         prime[j] = False
-                
                 i+=1
+            
             return sum(prime)
