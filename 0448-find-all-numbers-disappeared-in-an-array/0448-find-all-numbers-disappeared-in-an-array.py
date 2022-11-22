@@ -9,4 +9,5 @@ class Solution:
           
         return to_return
         '''
+        
         return set(range(1, len(nums)+1)) - set(nums)
