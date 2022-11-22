@@ -16,5 +16,4 @@ class Solution:
                 else:
                     head.val = ''
                     head = head.next
-                    
             return cycle
