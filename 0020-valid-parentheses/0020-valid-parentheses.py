@@ -17,5 +17,4 @@ class Solution:
             
             if len(to_close) !=0:
                 result = False
-            
             return result
