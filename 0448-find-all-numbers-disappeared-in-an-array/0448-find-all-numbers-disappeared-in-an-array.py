@@ -3,7 +3,7 @@ class Solution:
         to_return = []
         arr = set(nums)
         for i in range(1, len(nums)+1):
-            if not (i in arr):
+            if i not in arr:
                 to_return.append(i)
                 
         return to_return
