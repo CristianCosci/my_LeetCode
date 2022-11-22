@@ -8,4 +8,5 @@ class Solution:
                 count += 1
             else:
                 break
+        
         return count
