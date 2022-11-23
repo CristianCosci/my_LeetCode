@@ -3,7 +3,7 @@ class Solution:
         if len(flowerbed) > 1:
             for i in range(len(flowerbed)):
                 if n == 0:
-                    break
+                    return True
                     
                 if i == 0:
                      if flowerbed[i] == 0:
@@ -29,5 +29,4 @@ class Solution:
                 flowerbed[0] = 1
                 n -= 1
         
-        print(n)
         return n == 0
