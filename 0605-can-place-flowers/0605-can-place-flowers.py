@@ -1,4 +1,9 @@
 class Solution:
+    def check(self,flowerbed, i, n):
+        flowerbed[i] = 1
+        n -= 1
+        return flowerbed, n
+    
     def canPlaceFlowers(self, flowerbed: List[int], n: int) -> bool:
         if len(flowerbed) > 1:
             for i in range(len(flowerbed)):
@@ -8,8 +13,7 @@ class Solution:
                 if i == 0:
                      if flowerbed[i] == 0:
                         if flowerbed[i+1] == 0:
-                            flowerbed[i] = 1
-                            n -= 1
+                            flowerbed, n = self.check(flowerbed, i, n)
                 elif i == len(flowerbed)-1:
                      if flowerbed[i] == 0:
                         if flowerbed[i-1] == 0:
