@@ -1,8 +1,10 @@
 class Solution:
+    
     def check(self,flowerbed, i, n):
         flowerbed[i] = 1
         n -= 1
         return flowerbed, n
+    
     
     def canPlaceFlowers(self, flowerbed: List[int], n: int) -> bool:
         if len(flowerbed) > 1:
