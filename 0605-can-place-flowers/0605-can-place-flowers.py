@@ -21,6 +21,7 @@ class Solution:
         elif len(flowerbed) == 1:
             if n == 0:
                     return True
+                
             if flowerbed[0] == 0:
                 flowerbed[0] = 1
                 n -= 1
