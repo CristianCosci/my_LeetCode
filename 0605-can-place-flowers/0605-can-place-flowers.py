@@ -28,6 +28,7 @@ class Solution:
                     return True
                     
             if flowerbed[0] == 0:
-                flowerbed, n = self.check(flowerbed, 0, n)
+                flowerbed[0] = 1
+                n -= 1
         
         return n == 0
