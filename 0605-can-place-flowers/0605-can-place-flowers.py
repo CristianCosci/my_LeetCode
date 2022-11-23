@@ -18,6 +18,7 @@ class Solution:
                 else:
                     if flowerbed[i] == 0 and flowerbed[i+1] == 0 and flowerbed[i-1] == 0:
                         flowerbed, n = self.check(flowerbed, i, n)    
+        
         elif len(flowerbed) == 1:
             if n == 0:
                     return True
