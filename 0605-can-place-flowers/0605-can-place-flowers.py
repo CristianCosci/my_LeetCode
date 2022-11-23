@@ -11,17 +11,14 @@ class Solution:
                     return True
                     
                 if i == 0:
-                     if flowerbed[i] == 0:
-                        if flowerbed[i+1] == 0:
-                            flowerbed, n = self.check(flowerbed, i, n)
+                     if flowerbed[i] == 0 and flowerbed[i+1] == 0:
+                        flowerbed, n = self.check(flowerbed, i, n)
                 elif i == len(flowerbed)-1:
-                     if flowerbed[i] == 0:
-                        if flowerbed[i-1] == 0:
-                            flowerbed, n = self.check(flowerbed, i, n)
+                     if flowerbed[i] == 0 and flowerbed[i-1] == 0:
+                        flowerbed, n = self.check(flowerbed, i, n)
                 else:
-                    if flowerbed[i] == 0:
-                        if flowerbed[i+1] == 0 and flowerbed[i-1] == 0:
-                            flowerbed, n = self.check(flowerbed, i, n)
+                    if flowerbed[i] == 0 and flowerbed[i+1] == 0 and flowerbed[i-1] == 0:
+                        flowerbed, n = self.check(flowerbed, i, n)
                     
         elif len(flowerbed) == 1:
             if n == 0:
