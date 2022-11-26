@@ -20,7 +20,7 @@ class KthLargest:
                 
             i += 1
             
-        return self.nums[-1] if len(self.nums)>0 else None
+        return self.nums[-1] if len(self.nums) > 0 else None
 
 # Your KthLargest object will be instantiated and called as such:
 # obj = KthLargest(k, nums)
