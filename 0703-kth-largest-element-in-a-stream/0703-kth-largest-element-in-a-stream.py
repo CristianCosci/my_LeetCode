@@ -8,14 +8,11 @@ class KthLargest:
     def add(self, val: int) -> int:
         i = 0
         while True:
-            #print(i)
-            #print(self.nums)
             if val >= self.nums[i]:
                 self.nums.insert(i, val)
                 break
             i += 1
             
-        
         return self.nums[self.k-1]
 
 # Your KthLargest object will be instantiated and called as such:
