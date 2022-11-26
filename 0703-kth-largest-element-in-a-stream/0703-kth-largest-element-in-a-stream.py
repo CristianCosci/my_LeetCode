@@ -9,7 +9,7 @@ class KthLargest:
 
     def add(self, val: int) -> int:
         i = 0
-        while i < len(self.nums):
+        while i < self.k:
             if val >= self.nums[i]:
                 self.nums.insert(i, val)
                 
