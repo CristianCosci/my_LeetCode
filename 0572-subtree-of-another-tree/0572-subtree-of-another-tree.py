@@ -6,7 +6,6 @@
 #         self.right = right
 
 class Solution:
-    
     def isIdentical(self, root, subRoot):
         if root is None and subRoot is None:
             return True
@@ -15,9 +14,9 @@ class Solution:
             return ((root.val == subRoot.val) and
                 self.isIdentical(root.left, subRoot.left) and 
                 self.isIdentical(root.right, subRoot.right))
-    
+        
         return False
-                
+
     def visit(self, root: Optional[TreeNode], subRoot: Optional[TreeNode]):
         if root is not None:
             return self.isIdentical(root, subRoot) or self.visit(root.left, subRoot) or self.visit(root.right, subRoot)
