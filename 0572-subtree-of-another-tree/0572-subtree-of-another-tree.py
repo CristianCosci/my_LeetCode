@@ -4,7 +4,9 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
+
 class Solution:
+    
     def isIdentical(self, root, subRoot):
         if root is None and subRoot is None:
             return True
@@ -15,8 +17,7 @@ class Solution:
                 self.isIdentical(root.right, subRoot.right))
     
         return False
-        
-        
+                
     def visit(self, root: Optional[TreeNode], subRoot: Optional[TreeNode]):
         if root is not None:
             return self.isIdentical(root, subRoot) or self.visit(root.left, subRoot) or self.visit(root.right, subRoot)
@@ -24,6 +25,4 @@ class Solution:
             return False
             
     def isSubtree(self, root: Optional[TreeNode], subRoot: Optional[TreeNode]) -> bool:
-        #check = False
-        #self.visit(root, subRoot)
         return self.visit(root, subRoot)
