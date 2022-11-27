@@ -6,14 +6,17 @@
 #         self.right = right
 class Solution:
     def isIdentical(self, root, subRoot):
+        #both empty
         if root is None and subRoot is None:
             return True
         
+        #both not empty
         if root is not None and subRoot is not None:
             return ((root.val == subRoot.val) and
                 self.isIdentical(root.left, subRoot.left) and 
                 self.isIdentical(root.right, subRoot.right))
         
+        #one empty and one not
         return False
     
     def visit(self, root: Optional[TreeNode], subRoot: Optional[TreeNode]):
