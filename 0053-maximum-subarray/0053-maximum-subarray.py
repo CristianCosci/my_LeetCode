@@ -2,7 +2,7 @@ import numpy as np
 
 class Solution:
     def maxSubArray(self, nums: List[int]) -> int:
-        max_so_far = -1e5
+        max_so_far = -1e4 - 1
         max_ending_here = 0
         for i in range(len(nums)):
             max_ending_here += nums[i]
