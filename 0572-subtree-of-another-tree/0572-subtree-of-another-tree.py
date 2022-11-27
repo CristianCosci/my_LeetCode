@@ -17,6 +17,7 @@ class Solution:
         
         return False
 
+    
     def visit(self, root: Optional[TreeNode], subRoot: Optional[TreeNode]):
         if root is not None:
             return self.isIdentical(root, subRoot) or self.visit(root.left, subRoot) or self.visit(root.right, subRoot)
