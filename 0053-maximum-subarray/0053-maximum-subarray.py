@@ -1,5 +1,3 @@
-import numpy as np
-
 class Solution:
     def maxSubArray(self, nums: List[int]) -> int:
         max_so_far = -1e4 - 1
