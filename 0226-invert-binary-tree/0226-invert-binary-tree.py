@@ -5,6 +5,7 @@
 #         self.left = left
 #         self.right = right
 class Solution:
+    
     def visit(self, node: Optional[TreeNode]):
         if node is not None:
             tmp = node.left
