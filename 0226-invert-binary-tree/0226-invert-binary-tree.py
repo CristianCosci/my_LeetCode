@@ -15,5 +15,4 @@ class Solution:
         
     def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
         self.visit(root)
-        
         return root
