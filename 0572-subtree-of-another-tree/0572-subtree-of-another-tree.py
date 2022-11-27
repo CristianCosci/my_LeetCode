@@ -6,6 +6,7 @@
 #         self.right = right
 
 class Solution:
+    
     def isIdentical(self, root, subRoot):
         if root is None and subRoot is None:
             return True
