@@ -6,7 +6,6 @@ class MyHashSet:
     def add(self, key: int) -> None:
         if not key in self.set:
             self.set += [key]
-        #print(self.set)
 
     def remove(self, key: int) -> None:
         if key in self.set:
