@@ -3,7 +3,6 @@ class Solution:
         sum = 0
         for word in words:
             aux = True
-            
             for char in word:
                 if word.count(char)>chars.count(char):
                     aux = False
