@@ -6,15 +6,18 @@
 #         self.right = right
 class Solution:
     def visit(self, root1, root2):
+        #both empty
         if root1 == None and root2 == None:
             return None
         
+        #both non-empty
         if root1 is not None and root2 is not None:
             root1.val = root1.val + root2.val
             root1.left = self.visit(root1.left, root2.left)
             root1.right = self.visit(root1.right, root2.right)
             return root1
         
+        #one is empty
         if root1 is not None or root2 is not None:
             return root1 or root2
         
