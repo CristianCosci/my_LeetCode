@@ -20,6 +20,5 @@ class Solution:
         #one is empty
         return root1 or root2
         
-        
     def mergeTrees(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> Optional[TreeNode]:
         return self.visit(root1, root2)
