@@ -13,8 +13,6 @@ class Solution:
             for i in root.children:
                 self.visit(i, to_return)
             
-            
-            
     def preorder(self, root: 'Node') -> List[int]:
         to_return = []
         self.visit(root, to_return)
