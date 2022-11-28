@@ -8,7 +8,7 @@ class Solution:
             if seats[i] == 0:
                 max_ending_here += 1
             else:
-                if before == 0:
+                if not before:
                     pass
                 else:
                     max_ending_here = (max_ending_here+1) // 2
