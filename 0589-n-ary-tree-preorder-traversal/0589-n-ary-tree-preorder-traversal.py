@@ -7,13 +7,15 @@ class Node:
 """
 
 class Solution:
-    def visit(self, root: 'Node', to_return):
+    def __init__(self):
+        self.to_return = []
+    
+    def visit(self, root: 'Node'):
         if root is not None:
-            to_return.append(root.val)
+            self.to_return.append(root.val)
             for i in root.children:
-                self.visit(i, to_return)
+                self.visit(i)
             
     def preorder(self, root: 'Node') -> List[int]:
-        to_return = []
-        self.visit(root, to_return)
-        return to_return
+        self.visit(root)
+        return self.to_return
