@@ -14,7 +14,6 @@ class Solution:
             else:
                 max_ending_here += 1
         
-        
         if max_ending_here > max_so_far:
             max_so_far = max_ending_here
         
