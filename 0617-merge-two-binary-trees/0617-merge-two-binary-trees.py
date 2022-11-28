@@ -21,5 +21,6 @@ class Solution:
         if root1 is not None or root2 is not None:
             return root1 or root2
         
+        
     def mergeTrees(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> Optional[TreeNode]:
         return self.visit(root1, root2)
