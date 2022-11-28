@@ -1,13 +1,13 @@
 class Solution:
     def findLengthOfLCIS(self, nums: List[int]) -> int:
-        count = 1
-        max = 1
+        max_ending_here = 1
+        max_so_far = 1
         for i in range(len(nums)-1):
             if nums[i+1] > nums[i]:
-                count += 1
-                if max < count:
-                    max = count
+                max_ending_here += 1
+                if max_so_far < max_ending_here:
+                    max_so_far = max_ending_here
             else:
-                count = 1
+                max_ending_here = 1
             
-        return max
+        return max_so_far
