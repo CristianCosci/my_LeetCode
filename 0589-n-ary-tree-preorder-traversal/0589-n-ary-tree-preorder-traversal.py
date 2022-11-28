@@ -16,6 +16,7 @@ class Solution:
             for i in root.children:
                 self.visit(i)
             
+            
     def preorder(self, root: 'Node') -> List[int]:
         self.visit(root)
         return self.to_return
