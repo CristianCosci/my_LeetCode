@@ -7,9 +7,11 @@ class Solution:
                     max_ending_here = (max_ending_here+1) // 2
                     
                 before = 1
+                
                 if max_ending_here > max_so_far:
                     max_so_far = max_ending_here
                 max_ending_here = 0
+            
             else:
                 max_ending_here += 1
         
