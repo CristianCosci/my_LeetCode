@@ -1,6 +1,7 @@
 class Solution:
     def maxDistToClosest(self, seats: List[int]) -> int:
         before, max_ending_here, max_so_far = 0, 0, 0
+        
         for i in range(len(seats)):
             if seats[i]:
                 if before:
