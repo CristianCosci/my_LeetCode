@@ -6,7 +6,6 @@ class Solution:
         if sum_right == 0:
             return 0
         
-        
         for i in range(1, len(nums)):
             sum_left += nums[i-1]
             sum_right -= nums[i]
