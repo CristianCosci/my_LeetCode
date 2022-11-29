@@ -12,6 +12,7 @@ class Solution:
             if sum_left == sum_right:
                 return i
 
+            
         if sum_left == 0:
             return len(nums)-1
         
