@@ -18,4 +18,5 @@ class Solution:
                 root.right = visit(root.right)
                 return root
         
+        
         return visit(root)
