@@ -6,4 +6,5 @@ class Solution:
                 mappatura[s[i]] = t[i]
             elif s[i] not in mappatura or mappatura[s[i]] != t[i]:  
                 return False
+            
         return True
