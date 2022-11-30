@@ -8,7 +8,6 @@ class Solution:
             return False
         
         count_subsequence=0
-        
         for i in range(len(t)):
             if count_subsequence <= len_s -1:
                 if s[count_subsequence]==t[i]:
