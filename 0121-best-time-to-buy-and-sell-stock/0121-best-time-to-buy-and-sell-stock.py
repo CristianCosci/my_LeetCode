@@ -8,8 +8,7 @@ class Solution:
                     max_profit = prices[r] - prices[l]
             else:
                 l = r
-            
             r += 1
-        
+            
         return max_profit
         
