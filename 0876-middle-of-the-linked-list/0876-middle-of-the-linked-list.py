@@ -9,7 +9,7 @@ class Solution:
         while head.next:
             middle = middle.next
             if head.next.next:
-                head = head.next.next
+                head = head.next.next #scorro il doppio più veloce
             else:
                 break
         
