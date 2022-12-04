@@ -5,6 +5,7 @@ class Node:
         self.val = val
         self.children = children
 """
+
 class Solution:
     def __init__(self):
         self.to_return = []
