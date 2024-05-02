@@ -1,23 +1,20 @@
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
-        std::map<int, int> dict;
+        unordered_map<int, int> m;
+        int n = nums.size();
 
-        for (auto i = nums.begin(); i !=nums.end(); ++i){
-            dict[*i] = 0;
+        for (int i = 0; i < n; i++){
+            m[nums[i]]++;
         }
 
-        for (auto i = nums.begin(); i !=nums.end(); ++i){
-            dict[*i] += 1;
-        }
-
-        int max = std::numeric_limits<int>::min();
-
-        for (const auto& coppia : dict){
-            if (coppia.second > dict[max]){
-                max = coppia.first;
+        n /= 2;
+        for(auto x:m){
+            if(x.second > n){
+                return x.first;
             }
         }
-        return max;
+
+        return 0;
     }
 };
