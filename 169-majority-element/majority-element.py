@@ -12,5 +12,4 @@ class Solution:
             else:
                 count -=1
             
-            
         return candidate
