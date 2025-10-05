@@ -3,11 +3,11 @@ class Solution:
         candidate = 0
         count = 0
 
-        for i in nums:
+        for i in range(len(nums)):
             if count == 0:
-                candidate = i
+                candidate = nums[i]
             
-            if candidate == i:
+            if candidate == nums[i]:
                 count+= 1
             else:
                 count -=1
